@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // header dropdown toggle
+  // toggle display
   $('.js-target-services').on('click', function (e) {
     $('.about').addClass('is-hide');
     $('.main, .services').addClass('is-show-first');
@@ -7,5 +7,11 @@ $(document).ready(function() {
         $('.services').addClass('is-show-second');
     }, 2500);
     e.preventDefault();
+  });
+
+  $('.js-target-wallet').on('click', function (e) {
+    $('.wallet').addClass('is-show');
+    $('.services').addClass('is-hide');
+    $('.main').addClass('is-show-three');
   });
 });
