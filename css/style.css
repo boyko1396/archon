@@ -345,7 +345,7 @@ h6,
 
 .services.is-show-second .services-card__title {
     left: 26px;
-    transition-delay: 2s !important;
+    transition-delay: 1.7s !important;
 }
 
 .services-card__inner {
@@ -357,8 +357,9 @@ h6,
     transition-property: opacity, visibility;
 }
 
-.services.is-show-second .services-card__inner {
-    transition-delay: 2.1s;
+.services.is-show-second .services-card__inner,
+.services.is-show-second .services__description {
+    transition-delay: 1.8s;
 }
 
 .services-card__content {
@@ -581,10 +582,6 @@ h6,
 .services:not(.is-show-second) .services__description {
     visibility: hidden;
     opacity: 0;
-}
-
-.services.is-show-second .services__description {
-    transition-delay: 2.1s;
 }
 
 .services__description-text {
