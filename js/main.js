@@ -13,5 +13,6 @@ $(document).ready(function() {
     $('.wallet').addClass('is-show');
     $('.services').addClass('is-hide');
     $('.main').addClass('is-show-three');
+    e.preventDefault();
   });
 });
