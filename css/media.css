@@ -231,6 +231,17 @@
         left: 0;
         transform: translateX(100vw);
     }
+    .services:before {
+        background: url(../images/bg-img-3.png) left top no-repeat;
+        background-size: 100% auto;
+        width: 720px;
+        height: 861px;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
     .services.is-show-first {
         transform: initial;
     }
@@ -247,13 +258,38 @@
     .services__list-card {
         width: 100%;
         height: initial;
-        position: static;
     }
     .services-card {
+        background: transparent;
         padding: 1.8rem 3.2rem;
+        backdrop-filter: blur(2px);
+    }
+    .services-card:before {
+        width: 100%;
+        content: '';
+        position: absolute;
+        top: 5.6rem;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .services-card--theme-simple {
+        background: rgba(41,41,46,.5);
+    }
+    .services-card--theme-simple:before {
+        background: var(--color-dark);
+    }
+    .services-card--theme-gray {
+        background: rgba(77,78,88,.5);
+    }
+    .services-card--theme-gray:before {
+        background: var(--color-gray);
     }
     .services-card--theme-accent {
-        background: linear-gradient(-90deg, var(--color-accent-light) 4.42%, var(--color-accent) 98.24%), var(--color-accent);
+        background: linear-gradient(90deg,rgba(0,196,184,.5) 4.42%,rgba(10,206,136,.5) 98.24%);
+    }
+    .services-card--theme-accent:before {
+        background: linear-gradient(90deg, var(--color-accent-light) 4.42%, var(--color-accent) 98.24%), var(--color-accent);
     }
     .services-card__title {
         width: 100%;
@@ -290,7 +326,7 @@
     }
     .services.is-show-second .services-card__content {
         height: 2em;
-        margin-top: 1.2rem;
+        margin-top: 3.6rem;
     }
     .services__description {
         width: 100%;
@@ -338,6 +374,10 @@
     }
     .about__content-subtitle {
         font-size: 5vw;
+    }
+    .services:before {
+        width: 100%;
+        height: 100%;
     }
     .services-card__title {
         font-size: 16px;
