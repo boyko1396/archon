@@ -171,6 +171,8 @@
         padding-top: 2.4rem;
     }
     .about__inner {
+        height: 100%;
+        min-height: initial;
         flex-direction: column;
     }
     .about__content {
