@@ -164,7 +164,6 @@
         padding-top: 2.4rem;
         flex: 0 0 100vw;
         overflow-x: hidden;
-        overflow-y: auto;
         position: relative;
     }
     .about__inner {
