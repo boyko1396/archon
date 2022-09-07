@@ -161,10 +161,14 @@
     .main__slide {
         width: 100vw;
         height: 100%;
-        padding-top: 2.4rem;
         flex: 0 0 100vw;
         overflow-x: hidden;
+        overflow-y: auto;
         position: relative;
+    }
+    .about__inner,
+    .services__inner {
+        padding-top: 2.4rem;
     }
     .about__inner {
         flex-direction: column;
