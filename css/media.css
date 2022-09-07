@@ -210,7 +210,7 @@
         width: 100%;
         max-width: 100%;
         margin: auto 0 0;
-        padding: 4rem 3.2rem 3.2rem;
+        padding: 1rem 3.2rem 3.2rem;
         text-align: center;
     }
     .footer-powered__icon {
@@ -307,7 +307,7 @@
         padding: 0;
     }
     .wallet__footer-subtitle {
-        margin-bottom: 0;
+        margin-bottom: 3rem;
     }
     .services:not(.is-show-second) .services-card__inner {
         transform: translateY(10px);
