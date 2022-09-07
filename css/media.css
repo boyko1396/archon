@@ -154,21 +154,16 @@
         margin-left: -2rem;
     }
     .main {
-        display: flex;
         overflow: hidden;
     }
     .main__slide {
-        width: initial;
-        height: initial;
-        flex: 0 0 100vw;
-        overflow-x: hidden;
-        overflow-y: auto;
-        position: relative;
+        overflow: hidden;
     }
     .about__inner,
     .services__inner,
     .wallet__inner {
         height: 100%;
+        overflow-x: hidden;
         overflow-y: auto;
     }
     .about__inner,
@@ -237,7 +232,7 @@
         transform: translateX(100vw);
     }
     .services.is-show-first {
-        transform: translateX(-100vw);
+        transform: initial;
     }
     .services__inner {
         flex-direction: column;
@@ -308,7 +303,7 @@
         margin-bottom: 6.4rem;
     }
     .wallet.is-show {
-        transform: translateX(-200vw);
+        transform: initial;
     }
     .wallet__inner {
         padding: 0;
@@ -354,6 +349,8 @@
         margin-bottom: 3.2rem;
     }
     .wallet__inner {
+    }
+    .wallet__action {
         max-width: 70vw;
         margin-right: auto;
         margin-left: auto;
