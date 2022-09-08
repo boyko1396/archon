@@ -324,6 +324,8 @@
         z-index: -1;
     }
     .services-card:not(:first-child):after {
+        background: -webkit-gradient(linear,right top, left top,color-stop(-11.62%, #FFFFFF),color-stop(49.51%, rgba(255,255,255,0)));
+        background: -o-linear-gradient(right,#FFFFFF -11.62%,rgba(255,255,255,0) 49.51%);
         background: linear-gradient(-90deg,#FFFFFF -11.62%,rgba(255,255,255,0) 49.51%);
         width: 100%;
         height: 1px;
@@ -347,13 +349,13 @@
         background: var(--color-gray);
     }
     .services-card--theme-accent {
-        background: -webkit-gradient(linear,left top, right top,color-stop(4.42%, rgba(0,196,184,.5)),color-stop(98.24%, rgba(10,206,136,.5)));
         background: -o-linear-gradient(left,rgba(0,196,184,.5) 4.42%,rgba(10,206,136,.5) 98.24%);
+        background: -webkit-gradient(linear,left top, right top,color-stop(4.42%, rgba(0,196,184,.5)),color-stop(98.24%, rgba(10,206,136,.5)));
         background: linear-gradient(90deg,rgba(0,196,184,.5) 4.42%,rgba(10,206,136,.5) 98.24%);
     }
     .services-card--theme-accent:before {
-        background: -webkit-gradient(linear, left top, right top, color-stop(4.42%, var(--color-accent-light)), color-stop(98.24%, var(--color-accent))), var(--color-accent);
         background: -o-linear-gradient(left, var(--color-accent-light) 4.42%, var(--color-accent) 98.24%), var(--color-accent);
+        background: -webkit-gradient(linear, left top, right top, color-stop(4.42%, var(--color-accent-light)), color-stop(98.24%, var(--color-accent))), var(--color-accent);
         background: linear-gradient(90deg, var(--color-accent-light) 4.42%, var(--color-accent) 98.24%), var(--color-accent);
     }
     .services-card__title {
@@ -423,10 +425,10 @@
                 transform: initial;
     }
     .wallet__inner {
-        padding: 0;
+        padding: 0 3.2rem;
     }
     .wallet__footer-subtitle {
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
     }
     .services:not(.is-show-second) .services-card__inner {
         -webkit-transform: translateY(10px);
@@ -444,6 +446,30 @@
     }
     .wallet__footer-logo {
         margin-bottom: .5rem;
+    }
+    .wallet__inner-head {
+        padding-top: 3rem;
+    }
+    .wallet__form-btn-wrapper {
+        margin-left: initial;
+        position: relative;
+        left: initial;
+    }
+    .wallet__form-btn {
+        width: 100%;
+    }
+    .wallet__form-input:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+    .wallet__form-btn {
+        margin-top: 3rem;
+    }
+    .wallet__description {
+        margin-bottom: 3rem;
+    }
+    .wallet__hr {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
     }
 }
 
@@ -486,6 +512,9 @@
         margin-right: -3vw;
         margin-left: -3vw;
         font-size: 3.1vw;
+    }
+    .wallet__description {
+        font-size: 1.6rem;
     }
 }
 

@@ -4,8 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
 <title>Archon</title>
-<link href="./css/style.css?v=2162532662" type="text/css" rel="stylesheet">
-<link href="./css/media.css?v=2162532662" type="text/css" rel="stylesheet">
+<link href="./css/style.css?v=533266263" type="text/css" rel="stylesheet">
+<link href="./css/media.css?v=533266263" type="text/css" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/images/favicon/site.webmanifest">
+<link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/images/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
@@ -105,37 +114,58 @@
     <!-- wallet BEGIN -->
     <div class="wallet main__slide">
       <div class="wallet__inner">
+        <div class="wallet__inner-head">
+          <div class="title-logo title-logo--size-md wallet__footer-logo">
+            <img src="./images/logo-type-2.png" alt="Archon" class="title-logo__img">
+          </div>
+          <div class="wallet__footer-subtitle">Desci developer guild</div>
+        </div>
+        <div class="wallet__description">Enter credentials and get temporary access to&nbsp;the exclusive Archon-X demo</div>
+        <form action="#" class="wallet__form">
+          <div class="wallet__form-input-wrapper">
+            <input type="text" name="login" class="input-el wallet__form-input" minlength="4" required placeholder="login">
+            <input type="password" name="password" class="input-el wallet__form-input" minlength="4" required placeholder="password">
+          </div>
+          <div class="wallet__form-btn-wrapper">
+            <button type="submit" class="btn btn--theme-accent wallet__form-btn">Sign in</button>
+          </div>
+        </form>
+        <div class="hr wallet__hr"></div>
+        <div class="wallet__description"><strong>Not authorized yet?</strong><br>Enter your e-mail and request access</div>
+        <form action="#" class="wallet__form">
+          <div class="wallet__form-input-wrapper">
+            <input type="email" name="email" class="input-el wallet__form-input" required placeholder="e-mail">
+          </div>
+          <div class="wallet__form-btn-wrapper">
+            <button type="submit" class="btn btn--theme-accent wallet__form-btn" disabled>Send Request</button>
+          </div>
+        </form>
         <div class="wallet__action">
-          <a href="#" class="btn btn--theme-accent wallet__action-item">Enter the App</a>
           <ul class="sc-list wallet__action-sc-list">
             <li class="sc-list__item">
               <a class="sc-list__link">
                 <svg class="icon sc-list__icon">
-                  <use xlink:href="./images/sprite.svg#twitter"></use>
+                  <use xlink:href="./images/sprite.svg#sc-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="sc-list__item">
               <a class="sc-list__link">
                 <svg class="icon sc-list__icon">
-                  <use xlink:href="./images/sprite.svg#telegram"></use>
+                  <use xlink:href="./images/sprite.svg#sc-telegram"></use>
                 </svg>
               </a>
             </li>
             <li class="sc-list__item">
               <a class="sc-list__link">
                 <svg class="icon sc-list__icon">
-                  <use xlink:href="./images/sprite.svg#github"></use>
+                  <use xlink:href="./images/sprite.svg#sc-discord"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
         <footer class="wallet__footer">
-          <div class="title-logo title-logo--size-md wallet__footer-logo">
-            <img src="./images/logo-type-2.svg" alt="Archon" class="title-logo__img">
-          </div>
-          <div class="wallet__footer-subtitle">Desci developer guild</div>
           <div class="wallet__footer-powered">
             <img src="./images/moon-rabbit-logo.png" alt="Moon Rabbit" class="wallet__footer-powered__icon">
             <div class="wallet__footer-powered__title">Powered by Moon Rabbit</div>
@@ -152,8 +182,8 @@
 </div>
 <!-- site END -->
 
-<script type="text/javascript" src="./js/jquery-3.6.0.min.js?v=2162532662"></script>
-<script type="text/javascript" src="./js/main.js?v=2162532662"></script>
+<script type="text/javascript" src="./js/jquery-3.6.0.min.js?v=533266263"></script>
+<script type="text/javascript" src="./js/main.js?v=533266263"></script>
 
 </body>
 </html>
