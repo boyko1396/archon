@@ -926,10 +926,19 @@ h6,
     margin-bottom: 4.0rem;
 }
 
+.wallet__action-sc-list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+}
+
 .wallet__action-email {
     margin: .5rem 0 2rem;
     font-weight: 300;
     font-size: 2.6rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     -webkit-transition: all .4s;
     -o-transition: all .4s;
     transition: all .4s;
