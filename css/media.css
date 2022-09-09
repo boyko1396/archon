@@ -415,9 +415,9 @@
         max-width: 100%;
         margin: 0;
         padding: 3rem 3.2rem;
-        -webkit-box-flex: initial;
-            -ms-flex-positive: initial;
-                flex-grow: initial;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
     }
     .services__description-text {
         margin-bottom: 6.4rem;

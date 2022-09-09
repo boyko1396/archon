@@ -183,7 +183,7 @@ h6,
 /* components
 =====================*/
 
-#site {
+#root {
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
